@@ -23,14 +23,14 @@
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
   
   <!-- Security: Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' https://cdn.vercel-analytics.com https://vitals.vercel-analytics.com https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self' https:;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' https://cdn.vercel-insights.com https://va.vercel-scripts.com 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self' https:;" />
   
   <!-- Security: Referrer policy -->
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   
   <!-- Preconnect to external resources -->
-  <link rel="preconnect" href="https://cdn.vercel-analytics.com" crossorigin />
-  <link rel="preconnect" href="https://vitals.vercel-analytics.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.vercel-insights.com" crossorigin />
+  <link rel="preconnect" href="https://va.vercel-scripts.com" crossorigin />
 </head>
 <body>
 
@@ -843,12 +843,11 @@
   <!-- ============================
        ANALYTICS & MONITORING
   ============================= -->
-  <!-- Vercel Analytics & Speed Insights -->
+  <!-- Vercel Analytics -->
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments) };
   </script>
-  <script defer src="https://cdn.vercel-analytics.com/v1/script.js"></script>
-  <script defer src="https://vitals.vercel-analytics.com/v1/script.js"></script>
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 
   <!-- Analytics Setup: Track pageviews and Web Vitals -->
   <script src="analytics-setup.js"></script>
