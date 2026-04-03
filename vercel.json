@@ -1,5 +1,4 @@
 {
-  "name": "emotion-llm",
   "buildCommand": "",
   "outputDirectory": ".",
   "headers": [
@@ -27,12 +26,6 @@
           "value": "strict-origin-when-cross-origin"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(?!.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2)$).*",
-      "destination": "/index.html"
     }
   ]
 }
