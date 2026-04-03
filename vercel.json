@@ -1,14 +1,7 @@
 {
-  "name": "Anthropic Emotion Research Explainer",
-  "description": "Interactive explainer on emotion representations in large language models",
-  "buildCommand": "echo 'Static site - no build required'",
+  "name": "emotion-llm",
+  "buildCommand": "",
   "outputDirectory": ".",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -34,6 +27,12 @@
           "value": "strict-origin-when-cross-origin"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(?!.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2)$).*",
+      "destination": "/index.html"
     }
   ]
 }
