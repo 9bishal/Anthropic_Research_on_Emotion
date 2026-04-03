@@ -5,15 +5,31 @@
 
 // Initialize Vercel Analytics and Web Vitals tracking
 (function initVercelAnalytics() {
-  // Ensure va queue is available
+  // Ensure va queue is available for backward compatibility
   if (!window.va) {
     window.va = function () {
       (window.vaq = window.vaq || []).push(arguments);
     };
   }
 
-  // Track page views
-  window.va('pageview');
+  // Wait for Vercel Analytics script to be ready
+  function waitForAnalytics(callback, attempts = 0) {
+    if (typeof window.va === 'function') {
+      callback();
+    } else if (attempts < 50) {
+      setTimeout(() => waitForAnalytics(callback, attempts + 1), 100);
+    }
+  }
+
+  waitForAnalytics(() => {
+    // Track page views - Vercel Analytics will auto-track this
+    console.log('✓ Vercel Analytics ready');
+    
+    // Send initial pageview
+    if (window.va) {
+      window.va('pageview');
+    }
+  });
 
   // Track Web Vitals: Cumulative Layout Shift (CLS)
   if ('PerformanceObserver' in window) {
