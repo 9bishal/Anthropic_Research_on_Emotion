@@ -1,0 +1,7 @@
+🤖 Do LLMs Actually Feel Emotions?
+
+Anthropic's groundbreaking research reveals that Claude's neural network contains real, measurable emotion-like patterns that actually influence its behavior. We've built an interactive explainer with visualizations, live demos, and steering experiments so you can explore this mind-bending research yourself.
+
+🔗 Check it out: https://anthropic-emotion-research-explaine.vercel.app
+
+#AI #ArtificialIntelligence #MachineLearning #Claude #Anthropic #AISafety #Research
