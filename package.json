@@ -1,0 +1,24 @@
+{
+  "name": "claude_emotion_research_paper",
+  "version": "1.0.0",
+  "description": "An interactive, educational website explaining Anthropic's groundbreaking research on emotion representations in large language models (Claude). Built with modern web technologies and best practices for security, performance, and user experience.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9bishal/Anthropic_Research_on_Emotion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/9bishal/Anthropic_Research_on_Emotion/issues"
+  },
+  "homepage": "https://github.com/9bishal/Anthropic_Research_on_Emotion#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
