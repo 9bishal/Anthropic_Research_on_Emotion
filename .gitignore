@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+npm-debug.log
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Misc
+.cache/
+*.log
