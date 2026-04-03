@@ -1,0 +1,39 @@
+{
+  "name": "Anthropic Emotion Research Explainer",
+  "description": "Interactive explainer on emotion representations in large language models",
+  "buildCommand": "echo 'Static site - no build required'",
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=3600"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
