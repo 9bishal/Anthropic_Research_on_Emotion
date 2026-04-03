@@ -104,6 +104,33 @@ Then visit: `http://localhost:8000`
 - **No unsafe inline scripts** (except minimal setup)
 - **HTTPS enforced** on Vercel
 
+## 📈 Analytics & Monitoring
+
+### Vercel Analytics Setup
+The site includes comprehensive Vercel Analytics tracking for static HTML:
+
+**What's Tracked:**
+- 📊 **Page Views**: Every visitor and page navigation
+- ⚡ **Core Web Vitals**: LCP, FID/INP, CLS, FP, FCP
+- 🎯 **Real-time Dashboard**: View visitor metrics in Vercel dashboard
+- 📱 **Device & Location**: Automatic device type and geographic data
+
+**Files Involved:**
+- `analytics-setup.js` — Initializes tracking and Web Vitals collection
+- `index.html` — Includes Vercel Analytics CDN scripts
+- `package.json` — Contains @vercel/analytics dependency
+
+**How It Works:**
+1. Vercel Analytics CDN scripts load automatically
+2. `analytics-setup.js` initializes pageview tracking
+3. Web Vitals metrics are collected via PerformanceObserver API
+4. Data is sent to Vercel dashboard in real-time
+
+**Viewing Analytics:**
+- Go to [vercel.com/dashboard](https://vercel.com/dashboard)
+- Select the "anthropic-emotion-research-explainer" project
+- View Analytics tab for visitor data and Web Vitals
+
 ## 📈 Performance
 
 - **Vercel Analytics**: Real-time user behavior tracking
