@@ -23,7 +23,7 @@
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
   
   <!-- Security: Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' https://cdn.vercel-analytics.com https://vitals.vercel-analytics.com https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self' https:;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' https://cdn.vercel-analytics.com https://cdn.vercel-insights.com https://vitals.vercel-analytics.com https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self' https:;" />
   
   <!-- Security: Referrer policy -->
   <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -31,6 +31,9 @@
   <!-- Preconnect to external resources -->
   <link rel="preconnect" href="https://cdn.vercel-analytics.com" crossorigin />
   <link rel="preconnect" href="https://vitals.vercel-analytics.com" crossorigin />
+  
+  <!-- Vercel Web Analytics -->
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </head>
 <body>
 
